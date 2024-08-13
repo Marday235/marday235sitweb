@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 12px;
+}
+header{
+    background-color: grey;
+    height: 200px;
+    color: white;
+    text-align: center;
+    font-family:'coveat',cursive;
+    font-size: 20px;
+
+}
+header h1{
+    font-size: 50px;
+    letter-spacing: 7px;
+    text-shadow: 2px 2px 5px black ;
+}
+header h2{
+    font-size: 20px;
+    letter-spacing: 6px;
+
+}
+nav{
+    height: 38px;
+    background-color: lightgrey;
+    text-align: center;
+    box-shadow: 1px 1px 5px black;
+    position: sticky;
+    top: 0;
+    
+}
+nav li{
+    display: inline-block;
+    padding: 10px 30px 0 0;
+}
+nav a {
+    background-color: grey;
+    color: lightgrey;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px black;
+}
+nav a:hover{
+    color: white;
+    box-shadow: 2px 2px 2px black;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    width: 80%;
+    margin: auto;
+    max-width: 900px;
+    gap: 20px;
+
+}
+.wrapper aside{
+    text-align: center;
+
+    
+}
+.wrapper aside img{
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px grey ;
+
+}
+.wrapper section{
+    font-size: 10px;
+}
+.wrapper p{
+    text-align: justify;
+    margin: 10px;
+
+}
+.title{
+    margin: 15px 10px 10px 10px ;
+    box-shadow: 2px 2px 5px grey;
+    padding: 5px;
+    font-size: 10px;
+}
+.wrapper aside ul{
+    list-style-type: none;
+    text-align: left;
+    margin: 0 15px;
+    line-height: 13pxpx;
+}
+footer{
+    background-color: grey;
+    text-align: center;
+    box-shadow: 1px 1px 5px black;
+    color: white;
+
+
+}
+#flex{
+ display: flex;
+ text-align: center;
+}
+section .items{
+   text-align: center;
+   font-size: 8px;
+   color: grey;
+   padding: 10px;
+
+}
+footer p{
+    text-shadow: 1px 2px 5px black;
+    letter-spacing: 2px;
+    position: relative;
+    top: 10px;
+    height: 48px;
+    text-transform: uppercase;
+
+}
+.atouts p{
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 5px;
+
+}
+.atous span{
+    font-weight: bold;
+
+}
+progress{
+
+    width: 90%;
+    height: 10px;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+}
+progress::-webkit-progress-bar{
+    background-color: lightgrey;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow:1px 1px 5px black;
+
+}
+progress::-webkit-progress-value{
+    background-color: grey;
+    border-radius: 5px;
+}
+     
+/*portfolio*/
+
+
+.flex-pf
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.flex-pf .item-site {
+    flex-basis: 50%;
+}
+
+.items-site img {
+    width : 90%;
+    -webkit-filter: grayscale(0%);
+    filter : grayscale(0%);
+    box-shadow: 1px 1px 5px black;
+}
+
+.items-site img:hover {
+    -webkit-filter: grayscale(100%);
+    filter : grayscale(100%);
+    box-shadow: 1px 1px 10px black;
+}
+.cv .grip{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    font-size: 15px;
+    gap: 30px 0px ;
+
+}
+.cv .date p{
+    color:grey;
+    padding-left: 15px;
+}
+.contact{
+    font-size: 13px;
+}
+input , textarea{
+    display: block;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+textarea{
+    height: 300px;
+}
+label{
+    font-weight: bold;
+}
+input[type="submit"]{
+    height: 20px;
+    width: 200px;
+    margin: auto;
+    margin-top: 15px;
+
+}
+@media screen and (max-width=150px){
+    header h1 {
+        font-size: 5px;
+    }
+}
